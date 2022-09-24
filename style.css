@@ -137,17 +137,17 @@ body .disable-body {
 }
 
 .inner-banner {
-    background: url("wave.png");
+    background: url("./image/wave.png");
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: 100% 50%;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    
 }
 
 .banner-text {
-    width: 65%;
     padding: 50px 0px 20px 80px;
     z-index: 2;
 }
@@ -209,7 +209,7 @@ body .disable-body {
 }
 
 .banner-img {
-    width: 35%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -315,7 +315,7 @@ body .disable-body {
     cursor: pointer;
     border: 2px  solid black;
     border-radius: 5px;
-    box-shadow: 3px 5px crimson;
+    box-shadow: 3px 5px rgb(61, 58, 59);
 
     
 }

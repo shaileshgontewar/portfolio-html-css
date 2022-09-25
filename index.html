@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <!--* -------------------- Header-----------------  -->
     <header class="header">
       <div class="head-name">Shailesh Gontewar</div>
       <div class="menu">
@@ -43,45 +44,35 @@
       <a href="#resume" class="border-bottom" onclick="closeMenu()">Resume</a>
       <a href="#contact" class="border-bottom" onclick="closeMenu()">Contact</a>
     </div>
-
+    <!--* -------------------- Banner -----------------  -->
     <div class="banner">
       <div class="inner-banner">
-        <div class="banner-text">
+        <div class="banner-text box">
           <p class="banner-name">Hi, I am Shailesh Gontewar</p>
           <p class="banner-developer">A Full-Stack Developer</p>
           <p class="banner-description">
             I develop projects and Innovation is my passion.
           </p>
-          <div class="hireme-btn">
-            <a href="#contact" alt=""> Hire Me </a>
-          </div>
-          <div class="getresume-btn">
-            <a href="" target="_blank"> Get Resume </a>
+          <div class="button">
+            <button class="hireme-btn">
+              <a href="#contact" alt=""> Hire Me </a>
+            </button>
+            <button class="getresume-btn">
+              <a href="" target="_blank"> Get Resume </a>
+            </button>
           </div>
         </div>
-        <div class="banner-img">
-          <img
-            src="./image/banner-guy.png"
-            alt=""
-            width=""
-            height=""
-            
-          />
+        <div class="banner-img box">
+          <img src="./image/banner-guy.png" alt="img" width="" height="" />
         </div>
       </div>
     </div>
-
+    <!--*----------------------- About Box -->
     <div class="about-box">
-      <div class="about-img">
-        <img
-          src="./image/about-me-guy.png"
-          alt=""
-          width="90%"
-          height="80%"
-          style="padding: 30px 10px 0px 10px"
-        />
+      <div class="about-img box">
+        <img src="./image/about-me-guy.png" alt="" />
       </div>
-      <div class="about-text">
+      <div class="about-text box">
         <p class="about-me" id="about">About Me</p>
         <p>
           I'm a web designer & front-end developer with good experience in
@@ -106,10 +97,12 @@
             <li><img src="./image/nodejs.png" alt="" /></li>
             <li><img src="./image/mongodb.png" alt="" /></li>
             <li><img src="./image/github.png" alt="" /></li>
+            <li><img src="./image/netlify.svg" alt="" /></li>
           </ul>
         </div>
       </div>
     </div>
+    <!--* -------------------- portfolio -----------------  -->
     <div class="portfolio-box">
       <div class="portfolio-heading" id="portfolio">My Portfolio</div>
       <div class="portfolio-list">
@@ -131,39 +124,46 @@
         /></a>
       </div>
     </div>
-
+    <!--* -------------------- resume -----------------  -->
     <div class="resume-box">
       <div class="resume-heading" id="resume">Resume</div>
       <div class="resume-innerbox">
-        <div class="vertical-line"></div>
-        <div class="resume-left">
-          <p class="education">Education</p>
+        <div class="resume-left box">
+          <p class="education">Education :</p>
           <hr />
-          <p class="circle c-1">&#8226;</p>
-          <p class="education-details">VMV College RTMNU University <i></i></p>
-          <span>2019 - 2022</span> <br />
-          <p class="marks">Master in Computer Application(MCA)</p>
-          <p class="circle c-2">&#8226;</p>
-          <p class="education-details">
-            Shri M. Mohata Science College, Nagpur <i></i>
-          </p>
-          <span>2015 - 2018</span> <br />
-          <p class="marks">Bachelor of Science(B.Sc)</p>
-          <p class="circle c-3">&#8226;</p>
-          <p class="education-details">Shri Niketan Junior College,Nagpur</p>
-          <span>2013 - 2015</span> <br />
-          <p class="marks">12th</p>
+          <div class="education-box">
+            <p class="circle c-1">&#8226;</p>
+            <span>2019 - 2022</span> 
+            <p class="education-details">
+              VMV College RTMNU University <i></i>
+            </p>
+            <p class="marks">Master in Computer Application(MCA)</p>
+          </div>
+          <div class="education-box">
+            <p class="circle c-2">&#8226;</p>
+            <span>2015 - 2018</span> 
+            <p class="education-details">
+              Shri M. Mohata Science College, Nagpur <i></i>
+            </p>
+            <p class="marks">Bachelor of Science(B.Sc)</p>
+          </div>
+          <div class="education-box">
+            <span>2013 - 2015</span> 
+            <p class="circle c-3">&#8226;</p>
+            <p class="education-details">Shri Niketan Junior College,Nagpur</p>
+            <p class="marks">12th</p>
+          </div>
         </div>
-        <div class="resume-right">
-          <img src="./image/developer4.png" alt="" width="90%" height="100%" />
+        <div class="resume-right box">
+          <img src="./image/resume-guy-img.png" alt="img" />
         </div>
       </div>
     </div>
-
+    <!--* -------------------- contact -----------------  -->
     <div class="contact-box">
       <div class="contact-heading" id="contact">Contact Me</div>
       <div class="contact-innerbox">
-        <div class="contact-left">
+        <div class="contact-left box">
           <p class="lets-connect">Let's connect</p>
           <p class="contact-para">
             Hey there I’m always up for a chat. My inbox is always open. Whether
@@ -182,7 +182,7 @@
             >
           </div>
         </div>
-        <div class="contact-right">
+        <div class="contact-right box">
           <div class="send-msg">Send me a message</div>
           <form action="">
             <label for="name">First & Last Name</label>
@@ -205,8 +205,10 @@
         </div>
       </div>
     </div>
+
+    <!--* -------------------- footer -----------------  -->
     <div class="footer">
-      <p>&copy; 2022 Shailesh Gontewar All rights reserved.</p>
+      <p>&copy; 2022 developed by Shailesh Gontewar</p>
     </div>
     <script src="script.js"></script>
   </body>
